@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*********** HEADER ***********/
+header{
+    width: 100%;
+    background-color: white;
+    padding: 0 100px;
+}
+.contenedor-header{
+    width: 100%;
+}
+.contenedor-header ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.contenedor-header li{
+    margin-left: 20px;
+}
+.fondo-azul{
+    background-color: #00AEF0;
+    padding: 15px 5px 20px 5px;
+    color: white;
+}
+body{
+    background-color: #264E72;
+}
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.logo{
+    margin-top: 20px;
+    width: 275px;
+    height: 200px;
+}
+.contenedor-datos{
+    max-width: 660px;
+    width: 90vw;
+    height: 480px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/************* Left Side ***************/
+.left{
+    background-color: white;
+}
+.left h3{
+    background-color: #00AEF0;
+    padding: 15px 5px;
+    color: white;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.left input{
+    width: 92%;
+    padding: 15px 10px;
+    margin-bottom: 5px;
+    background-color: #F0F0F0;
+    border: none;
+    border-left: 3px solid #F99F1C;
+}
+input::placeholder{
+    font-weight: 400;
+    color: #757575;
+}
+.left label{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 12px;
+    padding-bottom: 3px;
+}
+.btn{
+    background-color: #00AEF0;
+    width: 92%;
+    border: none;
+    padding: 15px 5px;
+    font-size: 17px;
+    color: white;
+}
+
+.external-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+    padding-right: 12px;
+    margin-top: 10px;
+}
+.external-links a{
+    text-decoration: underline;
+    color: #004D63;
+    margin-bottom: 5px;
+
+}
+.external-links a:hover{
+    color: #00AEF0;
+}
+
+/**************** Right Side **************/
+.right{
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.right img{
+    height: 96%;
+    width: 95%;
+}
+.contenedor-intendencia{
+    padding-top: 2rem;
+}
+.superintendencia{
+    width: 120px;
+    height: 120px;
+}
+
+
+@media (max-width: 520px) {
+      .contenedor-datos{
+        grid-template-columns: 1fr;
+      }
+      .right{
+        display: none;
+      }
+
+      nav ul li{
+        display: none;
+      }
+
+}
